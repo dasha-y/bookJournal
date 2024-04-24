@@ -39,7 +39,6 @@ public class BooksController {
 
     @PostMapping("/create")
     public String showCreatePage(@Valid @ModelAttribute BookDto bookDto, BindingResult result){
-
         return "redirect:/books";
     }
 }
