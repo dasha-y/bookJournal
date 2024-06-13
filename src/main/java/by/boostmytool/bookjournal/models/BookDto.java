@@ -12,15 +12,15 @@ import org.springframework.web.multipart.MultipartFile;
 public class BookDto {
 
 
-    @NotEmpty(message = "Необходимо имя")
+    @NotEmpty(message = "The name is required")
     private String name;
-    @NotEmpty(message = "Необходим автор")
+    @NotEmpty(message = "The author is required")
     private String author;
-    @NotEmpty(message = "Необходим жанр")
+    @NotEmpty(message = "The genre is required")
     private String genre;
 
-    @Size(min = 10, message = "Описание должно быть не меньше 10 символов")
-    @Size(max = 2000, message = "Описание не должно быть более 2000 символов")
+    @Size(min = 10, message = "The description should be at least 10 characters")
+    @Size(max = 2000, message = "The description should not be at least 2000 characters")
     private String annotation;
 
     @Min(1)
